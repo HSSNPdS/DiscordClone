@@ -11,12 +11,12 @@ const ServerList: React.FC = () => {
 
             <Separator/>
 
-            <ServerButton/>
+            <ServerButton hasNotifications/>
             <ServerButton mentions={3}/>
             <ServerButton mentions={1}/>
             <ServerButton hasNotifications/>
-            <ServerButton />
-            <ServerButton />
+            <ServerButton hasNotifications/>
+            <ServerButton hasNotifications/>
             <ServerButton hasNotifications/>
             <ServerButton mentions={5}/>
         </Container>
