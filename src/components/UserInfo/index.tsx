@@ -1,16 +1,39 @@
 import React from 'react';
 
-import {Container, Title, ExpandIcon} from './styles';
+import Macaco from '../../assets/macaco.jpg';
+
+import {
+    Container,
+    Profile, 
+    Avatar,
+    UserData,
+    Icons, 
+    MicIcon, 
+    HeadphoneIcon, 
+    SettingsIcon,
+} from './styles';
 
 //Exportação em typescript
-const ServerName: React.FC = () => { 
+const UserInfo: React.FC = () => { 
     return(
         <Container>
-            <Title>ODE</Title>
+           <Profile>
+               <Avatar>
+                   <img src={Macaco} alt="Macaco"/>
+               </Avatar>
+               <UserData>
+                   <strong>Macaco</strong>
+                   <span>#45245</span>
+               </UserData>
+           </Profile>
 
-            <ExpandIcon/>
+           <Icons>
+               <MicIcon/>
+               <HeadphoneIcon/>
+               <SettingsIcon/>
+           </Icons>
         </Container>
     );
 };
 
-export default ServerName;
+export default UserInfo;
