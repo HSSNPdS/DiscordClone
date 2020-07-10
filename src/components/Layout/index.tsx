@@ -9,6 +9,7 @@ import ChannelList from '../ChannelList';
 import ChannelButton from '../ChannelButton';
 import UserInfo from '../UserInfo';
 import UserList from '../UserList';
+import ChannelData from '../ChannelData';
 
 //Exportação em typescript
 const Layout: React.FC = () => { 
@@ -18,6 +19,7 @@ const Layout: React.FC = () => {
             <ServerName/>
             <ChannelInfo/>
             <ChannelList/>
+            <ChannelData/>
             <UserInfo/>
             <div/>
             <UserList/>
